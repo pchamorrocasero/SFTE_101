@@ -1,47 +1,42 @@
-<!DOCTYPE html>
 <html>
-<head>
-<title>Week 2 website</title>
-</head>
-<body>
-
-<h1>Week two assignment for my website</h1>
+    <head>
+<title>Chami</title>
+    </head>
+    <body>
+        <hr>
+<img src="CHAMI.jpg" alt="soccer" width="400" height="200">
+<hr>
+        <h1>WELCOME TO OUR SITE</h1>
+        <p> If you want to know more about clothing and things related to clothing fashion you are in the correct website</p>
 <br>
-<p>These are the sports that i play</p>
-<br>
-<ol>
-    <li> basketball</li>
-    <li>soccer</li>
-</ol>
+<a  href="index.html">Home</a>
+<select onchange="la(this.value)">
+    <option desabled selected>Assignments</option>
+    <option value="assignment1.html">Assignment1</option>
+    <option value="assignment2.html">Assignment2</option>
+    <script>
+        function la(src)
+        {
+            window.location=src;
+        }
+    </script>
+  </select>
+<a  href="about me.html">About Me</a>
+<a  href="Form.html">Form</a>
+<a  href="Contact.html">Contact</a>
 <hr>
-<a href="https://www.udlaspalmas.es/" target="¨_blank">UD las palmas soccer page</a>
-<hr>
-<img src="Foto-oficial-plantilla-2023-2024.jpeg" alt="soccer" width="400" height="200">
-<hr>
-<table border ="1">
-    <tr>
-        <th>name</th>
-        <th>position</th>
-        <th>nationality</th>
-    </tr>
-    <tr>
-        <th>Pedro</th>
-        <th>Defense</th>
-        <th>Spain</th>
-    </tr>
-    <tr>
-        <th>Marc Cardona</th>
-        <th>straiker</th>
-        <th>Spain</th>
-    </tr>
-    <tr>
-        <th>Mika Marmol</th>
-        <th>Defense</th>
-        <th>Spain</th>
-    </tr>
-</table>
-
-<!--<br> skips a line-->
-<!--<hr> separates content with a line-->
-</body>
+<main>
+    <section>
+        <article>
+            <header>
+                <h3>Recommendation</h3>
+                <p> Person who is fond of clothing and modeling from Spain, last modification 9/20/2024</p>
+            </header>
+        </article>
+    </section>
+</main>
+<footer>
+    <p> &copy; 2024, Pedro Chamorro.</p>
+</footer>
+    </body>
 </html>
