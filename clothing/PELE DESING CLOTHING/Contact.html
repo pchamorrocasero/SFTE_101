@@ -1,66 +1,131 @@
-<!doctype html>
-<html lang="en">
+<html>
 <head>
-    <hr>
-    <img src="logopeledesign.jpg" alt="design" width="300" height="200">
-    <hr>
-            <h1>WELCOME TO OUR SITE</h1>
-            <p> If you want to know more about clothing and things related to clothing fashion you are in the correct website</p>
-    <br>
-    <a  href="index.html">Home</a>
-    <select onchange="la(this.value)">
-        <option desabled selected>Assignments</option>
-        <option value="assignment1.html">Assignment1</option>
-        <option value="assignment2.html">Assignment2</option>
-        <script>
-            function la(src)
-            {
-                window.location=src;
-            }
-        </script>
-      </select>
-    <a  href="about me.html">About Me</a>
-    <a  href="Form.html">Form</a>
-    <a  href="Contact.html">Contact</a>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CONTACT</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header img {
+    max-width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0;
+}
+
+
+form {
+    background: white;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 20px 0;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    text-align: center;
+    margin: 10px 0;
+}
+</style>
 </head>
 <body>
+<hr>
+<h1 style="text-align: center;">WELCOME TO OUR SITE</h1>
+<p>If you want to know more about clothing and things related to clothing fashion, you are in the correct website.</p>
 
-<header>    
-    <img src="CHAMI.jpg">
-    <h1>If you are interesting on some clothes, please contact me</h1>
-</header>
-<body>
-    <form>
-        <label>First Name:
-        <input type="text" name="firstName">
-        </label>
-        <br>
-        <br>
-        <label for="lastName">Last Name:</label>
-        <input id="lastName" type="text" name="lastName">
-        <br>
-        <br>
-        <label for="email">Email:</label>
-        <input id="email" type="email" name="email">
-        <br>
-        <br>
-        <label for="telephone">Telephone:</label>
-        <input id="telephone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" type="tel" name="telephone">
-        <br>
-        <br>
-        <label for="yourMessage">Your Message:</label>
-        <textarea id="yourMessage" name="yourMessage"></textarea>
-        <br>
-        <br>
-        <input type="submit" value="Submit">
-        </form>
-        
-    
+<form>
+<label for="firstName">First Name:</label>
+<input id="firstName" type="text" name="firstName">
 
-    <footer>
-        <p> &copy; 2024, Pedro Chamorro.</p>
-    </footer>
+<label for="lastName">Last Name:</label>
+<input id="lastName" type="text" name="lastName">
+
+<label for="email">Email:</label>
+<input id="email" type="email" name="email">
+
+<label for="telephone">Telephone:</label>
+<input id="telephone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" type="tel" name="telephone" placeholder="123-456-7890">
+
+<label for="yourMessage">Your Message:</label>
+<textarea id="yourMessage" name="yourMessage"></textarea>
+
+<input type="submit" value="Submit">
+</form>
+
+<footer>
+<p>&copy; 2024, Pedro Chamorro.</p>
+</footer>
+
+<script>
+function la(src) {
+    window.location = src;
+}
+</script>
 </body>
-     </html>
+</html>
