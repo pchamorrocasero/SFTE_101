@@ -1,0 +1,138 @@
+/* General Styles */
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+header .logo {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+header .menu {
+    margin-top: 10px;
+}
+
+header .menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header .menu a:hover {
+    text-decoration: underline;
+}
+
+/* Promo Section */
+.promo {
+    background: url('images/crocs-banner.jpg') no-repeat center center / cover;
+    text-align: center;
+    color: white;
+    padding: 60px 20px;
+}
+
+.promo h1 {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+.promo h4 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.promo .shop-now {
+    background-color: white;
+    color: #28a745;
+    border: 2px solid white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.promo .shop-now:hover {
+    background-color: #28a745;
+    color: white;
+    border-color: white;
+}
+
+/* Featured Products */
+.featured-products {
+    text-align: center;
+    padding: 40px;
+    background-color: #ffffff;
+}
+
+.featured-products h2 {
+    font-size: 2.5em;
+    color: #28a745;
+    margin-bottom: 30px;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 220px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.product p {
+    font-size: 1.2em;
+    color: #28a745;
+    font-weight: bold;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
